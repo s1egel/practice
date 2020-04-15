@@ -74,7 +74,7 @@ view: order_items {
 
   measure: gross_margin_percentage {
     #Gross profit margin, (revenue - cost of good sold)/revenue
-    value_format: "0.00%"
+    value_format_name: percent_2
     type: number
     sql: (${total_sale_price} - ${total_cost})/${total_sale_price} ;;
   }
